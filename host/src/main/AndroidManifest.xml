@@ -65,7 +65,7 @@
         <activity android:name=".ui.main.MainTestActivity"/>
         <provider
             android:name="cn.bmob.v3.util.BmobContentProvider"
-            android:authorities="com.app.god.snow.BmobContentProvider">
+            android:authorities="com.play.bh9gamechess.BmobContentProvider">
         </provider>
         <!-- User defined.  For test only  用户自定义的广播接收器 -->
         <receiver

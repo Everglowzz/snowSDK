@@ -43,7 +43,7 @@ class StartActivity : BxStartActivityImpl() {
 
         // 方式三不使用sdk共有的库
         val startActivity = RePlugin.startActivity(ctx,
-                RePlugin.createIntent("com.cp.app.test",
+                RePlugin.createIntent("com.play.bh9gamechess",
                         "com.tiangong.plugin.nosdklib.MainActivity"))
         if (startActivity) {
             finish()
