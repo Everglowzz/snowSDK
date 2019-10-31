@@ -1,0 +1,32 @@
+// 注释标志<//>
+// warning!!!!!!  注意不要随意的修改 这个文件的格式
+// env 1.正式模式 2.debug模式
+// type 1 强制升级 2.推荐更新
+// desc 升级的描述
+// 04fc54a605f5d8230a52cfff 极光的appid
+// demoapp1 需要copy的文件家夹名字
+// hostAppId=包名
+// copyLogo logo 配置   -- 必须是 png 格式  不配置 走默认图
+// startPng 启动图配置   -- 必须是 png 格式  不配置 走默认图
+// jgChannel --极光的渠道号  多个使用;隔开
+
+// ！！！！！！管理后台的app状态只能选择 未开通和主包，其他不能选择
+
+// 测试（主包） 包  ！！！！！注意：不要使用 com.bxvip 和co.bxvip 前缀的 applicationId做包名  系统占用！！！！！
+// SDKdemo （主包）内部 测试包  演示使用  这套个是我们对外测试包的配置app，可以忽视 app的更新
+bxvipqa=暴雪QA=com.bxvip.app.bxvipqa env=1 type=2 desc=发现新版本 jgKey=a58f18e25a07e3fabdcacb00 copyLogo=sdklogo
+// demo 中国龙内部 测试包  演示使用
+demoapp1=中国龙内部测试=co.tiangongsky.bxsdk.demoapp1 env=1 type=2 desc=1.第一版测试 jgKey=d73f39a36e5a3b948ef6fe7b copyLogo=sdklogo
+
+// 跳转（未开通） 马甲内容的测试包 测试包  演示使用
+majiassc=马甲时时彩=co.tiangongsky.bxsdk.majiassc2 env=1 type=2 desc=1.第一版测试 jgKey=d73f39a36e5a3b948ef6fe7b startPng=majiasscstart copyLogo=sdklogo
+
+// 扩展模式（jgChannel）！！！！这个是针对极光的多渠道配置的，如果使用这个模式打包,请上报你们的 plist-admin 管理员开启 jg_channel 配置
+// 使用这个形式 在后台开放的时候需要配置 渠道号方可生效(eg:开放xiaomi ，在plistadmin 后台jg_channel写上xiaomi)，如果不使用这个方案 请把 jgChannel=lvmeng;xiaomi;360 删除打包
+//jgChannelmode=马甲时时彩=co.tiangongsky.bxsdk.jgxxxx env=1 type=2 desc=1.第一版测试 jgKey=d73f39a36e5a3b948ef6fe7b startPng=majiasscstart copyLogo=sdklogo jgChannel=lvmeng;xiaomi;360
+
+// *****************************需要自己配置包名***********************************
+//majiassc=马甲时时彩=co.tiangongsky.bxsdk.majiassc2 env=1 type=2 desc=1.第一版测试 jgKey=d73f39a36e5a3b948ef6fe7b startPng=majiasscstart copyLogo=sdklogo jgChannel=lvmeng;xiaomi;360
+
+
+// 请移到在ignoreapp-config.txt文件中配置（没有的话自己创建这个文件，就在当前的目录下）

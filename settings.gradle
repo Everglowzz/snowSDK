@@ -1,0 +1,26 @@
+def rootPath = rootDir.absolutePath
+
+def settingBak = new File(rootPath + '/host-app-config/ignoreapp-config.txt')
+def settingBakExists = settingBak.exists()
+if (!settingBakExists) {
+    settingBak.createNewFile()
+    settingBak.append("""
+//请参照 app-config.txt 配置
+
+bxvipqa=暴雪QA=com.bxvip.app.bxvipqa env=1 type=2 desc=发现新版本 a58f18e25a07e3fabdcacb00 copyLogo=sdklogo
+// demo 中国龙内部 测试包  演示使用
+demoapp1=中国龙内部测试=co.tiangongsky.bxsdk.demoapp1 env=1 type=2 desc=1.第一版测试 d73f39a36e5a3b948ef6fe7b copyLogo=sdklogo
+
+// 跳转（未开通） 马甲内容的测试包 测试包  演示使用
+majiassc=马甲时时彩=co.tiangongsky.bxsdk.majiassc2 env=1 type=2 desc=1.第一版测试 d73f39a36e5a3b948ef6fe7b startPng=majiasscstart copyLogo=sdklogo
+
+
+""")
+}
+
+
+// host
+include ':host'
+// plugin
+include ':plugin-demo'
+include ':plugin-nosdklib'

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="adUrls">
+        <item>http://www.iteemall.com/themes/lnnxiwap/images/load.png</item>
+        <item>http://www.iteemall.com/themes/lnnxiwap/images/load.gif</item>
+    </string-array>
+</resources>

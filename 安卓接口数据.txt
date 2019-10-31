@@ -1,0 +1,12 @@
+
+
+
+【强更H5后台接口】
+
+ app请求：http://appid.985-985.com:8088/getAppConfig.php?appid=
+
+
+安卓H5强更测试appid：androidtest
+
+
+SDK测试包名：com.cp.app.test

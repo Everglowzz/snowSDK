@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/ejz"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <co.tiangongsky.bxsdkdemo.util.MyGifView
+            android:visibility="visible"
+            android:id="@+id/gif_img"
+            app:gif="@raw/loading_gif"
+            android:layout_centerInParent="true"
+            android:layout_width="72dp"
+            android:layout_height="72dp"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+        <include layout="@layout/item_title" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/eweb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/header"
+        android:layout_marginTop="-1dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <WebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </WebView>
+    </LinearLayout>
+
+    <co.tiangongsky.bxsdkdemo.util.DraggableFrameLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="50dp"
+        android:orientation="vertical"
+        app:direction="all"
+        app:showPercent="0.5">
+
+        <ImageView
+            android:id="@+id/qiu"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/aaa"
+            android:visibility="visible" />
+
+    </co.tiangongsky.bxsdkdemo.util.DraggableFrameLayout>
+
+</RelativeLayout>
